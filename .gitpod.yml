@@ -1,4 +1,4 @@
-image: patrickmckernin/floatchapter2022
+image: jelaniwoods/appdev2022-ruby-chapters
 
 tasks:
   - init: bin/setup
