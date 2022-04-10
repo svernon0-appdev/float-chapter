@@ -11,7 +11,7 @@ describe "float_find_hypotenuse.rb" do
 
     output = with_captured_stdout { require_relative('../../float_find_hypotenuse')} 
     output = "empty" if output.empty? 
-    expect(output.match?(/5.3\n/i)).to be(true),
+    expect(output.match?(/5.3/i)).to be(true),
       "Expected float_find_hypotenuse.rb output to be '5.3\n', but was #{output}."
     
   end
