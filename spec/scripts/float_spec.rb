@@ -3,7 +3,7 @@ describe "float_find_hypotenuse.rb" do
     float_find_hypotenuse_file = "float_find_hypotenuse.rb"
     file_contents = File.read(float_find_hypotenuse_file)
     File.foreach(float_find_hypotenuse_file).with_index do |line, line_num|
-      if !line.include?("#") || line.include?("p") || line.include?("puts") || line.include?("#")
+      if !line.include?("#") || line.include?("p") || line.include?("puts")
         expect(line).to_not match(/5.3/),
           "Expected 'float_find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
       end
