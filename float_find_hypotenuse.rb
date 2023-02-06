@@ -1,8 +1,9 @@
-# A right triangle's two shorter sides have length 2.8 and 4.5. How long is its longest side?
-# Check the pythagorous.png file for the Pythagorean Theorem
+# A right triangle's two shorter sides have length 2.8 and 4.5. 
+# How long is its longest side?
+#
+# Write a program to calculate how long its longest side is and print it.
 # 
-# Your output should be a number; for example,
+# Remember: the Pythagorean Theorem says that a**2 + b**2 = c**2, 
+# where `a` and `b` are the lengths of the shorter sides, and `c` is the length of the longest side
 # 
-# 5.3
-
-
+# Your output should be a Float (i.e., 1.0, rather than the Integer 1)
