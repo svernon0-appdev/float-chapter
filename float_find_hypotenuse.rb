@@ -7,3 +7,11 @@
 # where `a` and `b` are the lengths of the shorter sides, and `c` is the length of the longest side
 # 
 # Your output should be a Float (i.e., 1.0, rather than the Integer 1)
+
+
+
+# ~~~~~ Specs (make it do these things) ~~~~~
+#
+# float_find_hypotenuse.rb should output '5.3'
+#
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
