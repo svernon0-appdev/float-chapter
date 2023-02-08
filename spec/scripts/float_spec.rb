@@ -3,9 +3,11 @@ describe "find_hypotenuse.rb" do
     find_hypotenuse_file = "find_hypotenuse.rb"
     file_contents = File.read(find_hypotenuse_file)
     File.foreach(find_hypotenuse_file).with_index do |line, line_num|
-      if !line.include?("#") || line.include?("p") || line.include?("puts")
-        expect(line).to_not match(/5.3/),
-          "Expected 'find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
+      if line.include?("p") || line.include?("puts")
+        unless line.include?("#")
+          expect(line).to_not match(/5.3/),
+            "Expected 'find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
+        end
       end
     end
 
@@ -23,9 +25,11 @@ describe "round.rb" do
     round_file = "round.rb"
     file_contents = File.read(round_file)
     File.foreach(round_file).with_index do |line, line_num|
-      if !line.include?("#") || line.include?("p") || line.include?("puts") 
-        expect(line).to_not match(/3.333/),
-          "Expected 'round.rb' to NOT literally print '3.333', but did anyway."
+      if line.include?("p") || line.include?("puts") 
+        unless line.include?("#")
+          expect(line).to_not match(/3.333/),
+            "Expected 'round.rb' to NOT literally print '3.333', but did anyway."
+        end
       end
     end
 
