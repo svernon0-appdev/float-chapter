@@ -4,6 +4,6 @@
 
 # ~~~~~ Specs (make it do these things) ~~~~~
 #
-# float_round.rb should output '3.333' 
+# round.rb should output '3.333' 
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

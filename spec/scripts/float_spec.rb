@@ -1,38 +1,38 @@
-describe "float_find_hypotenuse.rb" do
+describe "find_hypotenuse.rb" do
   it "should output '5.3''", points: 1 do
-    float_find_hypotenuse_file = "float_find_hypotenuse.rb"
-    file_contents = File.read(float_find_hypotenuse_file)
-    File.foreach(float_find_hypotenuse_file).with_index do |line, line_num|
+    find_hypotenuse_file = "find_hypotenuse.rb"
+    file_contents = File.read(find_hypotenuse_file)
+    File.foreach(find_hypotenuse_file).with_index do |line, line_num|
       if !line.include?("#") || line.include?("p") || line.include?("puts")
         expect(line).to_not match(/5.3/),
-          "Expected 'float_find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
+          "Expected 'find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
       end
     end
 
-    output = with_captured_stdout { require_relative('../../float_find_hypotenuse')} 
+    output = with_captured_stdout { require_relative('../../find_hypotenuse')} 
     output = "empty" if output.empty? 
     expect(output.match?(/5.3/i)).to be(true),
-      "Expected float_find_hypotenuse.rb output to be '5.3\n', but was #{output}."
+      "Expected find_hypotenuse.rb output to be '5.3\n', but was #{output}."
     
   end
 end
 
-describe "float_round.rb" do
+describe "round.rb" do
   it "should output '3.333'", points: 1 do
     
-    float_round_file = "float_round.rb"
-    file_contents = File.read(float_round_file)
-    File.foreach(float_round_file).with_index do |line, line_num|
+    round_file = "round.rb"
+    file_contents = File.read(round_file)
+    File.foreach(round_file).with_index do |line, line_num|
       if !line.include?("#") || line.include?("p") || line.include?("puts") 
         expect(line).to_not match(/3.333/),
-          "Expected 'float_round.rb' to NOT literally print '3.333', but did anyway."
+          "Expected 'round.rb' to NOT literally print '3.333', but did anyway."
       end
     end
 
-    output = with_captured_stdout { require_relative('../../float_round')} 
+    output = with_captured_stdout { require_relative('../../round')} 
     output = "empty" if output.empty? 
     expect(output.match?(/3.333\n/i)).to be(true),
-      "Expected float_round.rb output to be '3.333\n', but was #{output}."
+      "Expected round.rb output to be '3.333\n', but was #{output}."
 
   end
 end

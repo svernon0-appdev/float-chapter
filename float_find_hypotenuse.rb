@@ -12,6 +12,6 @@
 
 # ~~~~~ Specs (make it do these things) ~~~~~
 #
-# float_find_hypotenuse.rb should output '5.3'
+# find_hypotenuse.rb should output '5.3'
 #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
